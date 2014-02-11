@@ -32,7 +32,8 @@
              org/jacorb/orb/rmi/*.java,
              org/jacorb/orb/typecode/*.java,
              org/jacorb/orb/util/*.java,
-             org/jacorb/orb/*.java"/>
+             org/jacorb/orb/*.java,
+			 org/jacorb/orb/cdr/*.java"/>
    </target>
 
 

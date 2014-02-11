@@ -39,15 +39,17 @@ public class EncapsInfo
     public Map<Serializable, Integer> valueMap;
     public Map<String, Integer> repIdMap;
     public Map<String, Integer> codebaseMap;
+    public boolean nextFragmentAffected;
 
     /** constructor used by CDRInputStream */
 
-    public EncapsInfo(boolean le, int index, int start, int size)
+    public EncapsInfo(boolean le, int index, int start, int size, boolean nextFragmentAffected)
     {
         littleEndian = le;
         this.index = index;
         this.start = start;
         this.size = size;
+        this.nextFragmentAffected = nextFragmentAffected;
     }
 
     /**

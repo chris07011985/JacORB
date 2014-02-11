@@ -33,7 +33,7 @@ public class Messages
     /**
      * <code>MSG_HEADER_SIZE</code> is the GIOP message header size constant.
      */
-    static final int MSG_HEADER_SIZE = 12;
+    public static final int MSG_HEADER_SIZE = 12;
 
     /**
      * The <code>service_context</code> array is to align the data following this
