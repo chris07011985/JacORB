@@ -661,13 +661,13 @@ public class GIOPConnectionTest extends ORBTestCase
             data[i] = r_in.read_double();
 
         //is the data correct?
-        assertEquals( 1.1 , data[0]);
-        assertEquals( 1.2 , data[1]);
-        assertEquals( 1.3 , data[2]);
-        assertEquals( 1.4 , data[3]);
-        assertEquals( 1.5 , data[4]);
-        assertEquals( 1.6 , data[5]);
-        assertEquals( 1.7 , data[6]);
+        assertEquals( 1.1 , data[0] , 1e-15);
+        assertEquals( 1.2 , data[1] , 1e-15);
+        assertEquals( 1.3 , data[2] , 1e-15);
+        assertEquals( 1.4 , data[3] , 1e-15);
+        assertEquals( 1.5 , data[4] , 1e-15);
+        assertEquals( 1.6 , data[5] , 1e-15);
+        assertEquals( 1.7 , data[6] , 1e-15);
     }
 
     @Test
@@ -691,13 +691,13 @@ public class GIOPConnectionTest extends ORBTestCase
         r_in.read_double_array(data, 0, data.length);
 
         //is the data correct?
-        assertEquals( 1.1 , data[0]);
-        assertEquals( 1.2 , data[1]);
-        assertEquals( 1.3 , data[2]);
-        assertEquals( 1.4 , data[3]);
-        assertEquals( 1.5 , data[4]);
-        assertEquals( 1.6 , data[5]);
-        assertEquals( 1.7 , data[6]);
+        assertEquals( 1.1 , data[0], 1e-15);
+        assertEquals( 1.2 , data[1], 1e-15);
+        assertEquals( 1.3 , data[2], 1e-15);
+        assertEquals( 1.4 , data[3], 1e-15);
+        assertEquals( 1.5 , data[4], 1e-15);
+        assertEquals( 1.6 , data[5], 1e-15);
+        assertEquals( 1.7 , data[6], 1e-15);
     }
 
     @Test
@@ -723,13 +723,13 @@ public class GIOPConnectionTest extends ORBTestCase
             data[i] = r_in.read_float();
 
         //is the data correct?
-        assertEquals( (float) 1.1 , data[0]);
-        assertEquals( (float) 1.2 , data[1]);
-        assertEquals( (float) 1.3 , data[2]);
-        assertEquals( (float) 1.4 , data[3]);
-        assertEquals( (float) 1.5 , data[4]);
-        assertEquals( (float) 1.6 , data[5]);
-        assertEquals( (float) 1.7 , data[6]);
+        assertEquals( (float) 1.1 , data[0] , 1e-15);
+        assertEquals( (float) 1.2 , data[1] , 1e-15);
+        assertEquals( (float) 1.3 , data[2] , 1e-15);
+        assertEquals( (float) 1.4 , data[3] , 1e-15);
+        assertEquals( (float) 1.5 , data[4] , 1e-15);
+        assertEquals( (float) 1.6 , data[5] , 1e-15);
+        assertEquals( (float) 1.7 , data[6] , 1e-15);
     }
 
     @Test
@@ -754,13 +754,13 @@ public class GIOPConnectionTest extends ORBTestCase
         r_in.read_float_array(data, 0, data.length);
 
         //is the data correct?
-        assertEquals( (float) 1.1 , data[0]);
-        assertEquals( (float) 1.2 , data[1]);
-        assertEquals( (float) 1.3 , data[2]);
-        assertEquals( (float) 1.4 , data[3]);
-        assertEquals( (float) 1.5 , data[4]);
-        assertEquals( (float) 1.6 , data[5]);
-        assertEquals( (float) 1.7 , data[6]);
+        assertEquals( (float) 1.1 , data[0], 1e-15);
+        assertEquals( (float) 1.2 , data[1], 1e-15);
+        assertEquals( (float) 1.3 , data[2], 1e-15);
+        assertEquals( (float) 1.4 , data[3], 1e-15);
+        assertEquals( (float) 1.5 , data[4], 1e-15);
+        assertEquals( (float) 1.6 , data[5], 1e-15);
+        assertEquals( (float) 1.7 , data[6], 1e-15);
     }
 
     @Test
@@ -1753,12 +1753,12 @@ public class GIOPConnectionTest extends ORBTestCase
         r_in.read_float_array(data, 0, 6);
 
         //is the data correct?
-        assertEquals( (float) 1.1 , data[0]);
-        assertEquals( (float) 1.2 , data[1]);
-        assertEquals( (float) 1.3 , data[2]);
-        assertEquals( (float) 1.4 , data[3]);
-        assertEquals( (float) 1.5 , data[4]);
-        assertEquals( (float) 1.6 , data[5]);
+        assertEquals( (float) 1.1 , data[0], 1e-15);
+        assertEquals( (float) 1.2 , data[1], 1e-15);
+        assertEquals( (float) 1.3 , data[2], 1e-15);
+        assertEquals( (float) 1.4 , data[3], 1e-15);
+        assertEquals( (float) 1.5 , data[4], 1e-15);
+        assertEquals( (float) 1.6 , data[5], 1e-15);
     }
 
     @Test
@@ -1782,12 +1782,12 @@ public class GIOPConnectionTest extends ORBTestCase
             data[i] = r_in.read_float();
 
         //is the data correct?
-        assertEquals( (float) 1.1 , data[0]);
-        assertEquals( (float) 1.2 , data[1]);
-        assertEquals( (float) 1.3 , data[2]);
-        assertEquals( (float) 1.4 , data[3]);
-        assertEquals( (float) 1.5 , data[4]);
-        assertEquals( (float) 1.6 , data[5]);
+        assertEquals( (float) 1.1 , data[0], 1e-15);
+        assertEquals( (float) 1.2 , data[1], 1e-15);
+        assertEquals( (float) 1.3 , data[2], 1e-15);
+        assertEquals( (float) 1.4 , data[3], 1e-15);
+        assertEquals( (float) 1.5 , data[4], 1e-15);
+        assertEquals( (float) 1.6 , data[5], 1e-15);
     }
 
     @Test
@@ -1809,12 +1809,12 @@ public class GIOPConnectionTest extends ORBTestCase
         r_in.read_double_array(data, 0, 6);
 
         //is the data correct?
-        assertEquals( 1.1 , data[0]);
-        assertEquals( 1.2 , data[1]);
-        assertEquals( 1.3 , data[2]);
-        assertEquals( 1.4 , data[3]);
-        assertEquals( 1.5 , data[4]);
-        assertEquals( 1.6 , data[5]);
+        assertEquals( 1.1 , data[0], 1e-15);
+        assertEquals( 1.2 , data[1], 1e-15);
+        assertEquals( 1.3 , data[2], 1e-15);
+        assertEquals( 1.4 , data[3], 1e-15);
+        assertEquals( 1.5 , data[4], 1e-15);
+        assertEquals( 1.6 , data[5], 1e-15);
     }
 
     @Test
@@ -1838,12 +1838,12 @@ public class GIOPConnectionTest extends ORBTestCase
             data[i] = r_in.read_double();
 
         //is the data correct?
-        assertEquals( 1.1 , data[0]);
-        assertEquals( 1.2 , data[1]);
-        assertEquals( 1.3 , data[2]);
-        assertEquals( 1.4 , data[3]);
-        assertEquals( 1.5 , data[4]);
-        assertEquals( 1.6 , data[5]);
+        assertEquals( 1.1 , data[0], 1e-15);
+        assertEquals( 1.2 , data[1], 1e-15);
+        assertEquals( 1.3 , data[2], 1e-15);
+        assertEquals( 1.4 , data[3], 1e-15);
+        assertEquals( 1.5 , data[4], 1e-15);
+        assertEquals( 1.6 , data[5], 1e-15);
     }
 
     @Test
@@ -1998,7 +1998,6 @@ public class GIOPConnectionTest extends ORBTestCase
         assertEquals( "abcd", result);
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes1248(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(2, 1);
@@ -2058,7 +2057,6 @@ public class GIOPConnectionTest extends ORBTestCase
         assertEquals(new Float(5.1), new Float(r_in.read_float()));
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes1428(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(2, 1);
@@ -2094,7 +2092,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes1428(false);
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes1482(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2132,8 +2129,7 @@ public class GIOPConnectionTest extends ORBTestCase
     {
         helpTestGIOP_1_1_readFragmented_sizes1482(false);
     }
-
-    @Test
+    
     public void helpTestGIOP_1_1_readFragmented_sizes1824(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2171,7 +2167,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes1824(false);
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes1842(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2209,7 +2204,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes1842(false);
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes2148(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(2, 1);
@@ -2247,7 +2241,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes2148(false);
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes2184(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2282,8 +2275,7 @@ public class GIOPConnectionTest extends ORBTestCase
     {
         helpTestGIOP_1_1_readFragmented_sizes2184(false);
     }
-    
-    @Test
+       
     public void helpTestGIOP_1_1_readFragmented_sizes2418(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(2, 1);
@@ -2320,7 +2312,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes2418(false);
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes2481(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2357,8 +2348,7 @@ public class GIOPConnectionTest extends ORBTestCase
     {
         helpTestGIOP_1_1_readFragmented_sizes2481(false);
     }
-
-    @Test
+ 
     public void helpTestGIOP_1_1_readFragmented_sizes2841(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2395,8 +2385,7 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes2841(false);
     }
 
-    @Test
-    public void helpTestGIOP_1_1_readFragmented_sizes2814(boolean addPadding) throws Exception
+    private void helpTestGIOP_1_1_readFragmented_sizes2814(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
 
@@ -2431,7 +2420,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes2814(false);
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes4128(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(2, 1);
@@ -2469,7 +2457,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes4128(false);
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes4182(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2511,7 +2498,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes4182(false);
     }
 
-    @Test    
     public void helpTestGIOP_1_1_readFragmented_sizes4281(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2550,8 +2536,7 @@ public class GIOPConnectionTest extends ORBTestCase
     {
         helpTestGIOP_1_1_readFragmented_sizes4281(false);
     }
-
-    @Test    
+  
     public void helpTestGIOP_1_1_readFragmented_sizes4218(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(2, 1);
@@ -2590,7 +2575,6 @@ public class GIOPConnectionTest extends ORBTestCase
         helpTestGIOP_1_1_readFragmented_sizes4218(false);
     }
 
-    @Test
     public void testGIOP_1_1_readFragmented_sizes4821() throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);
@@ -2720,7 +2704,6 @@ public class GIOPConnectionTest extends ORBTestCase
         assertEquals((byte) 0xab, r_in.read_octet());
     }
 
-    @Test
     public void helpTestGIOP_1_1_readFragmented_sizes12488(boolean addPadding) throws Exception
     {
         List<MessageOutputStream> outputStreams = createRequestOutputStreams(3, 1);

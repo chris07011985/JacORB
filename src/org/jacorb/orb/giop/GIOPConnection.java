@@ -598,24 +598,6 @@ public abstract class GIOPConnection
                         return;
                     }
 
-                    //GIOP 1.1 Fragmented messages currently not supported
-                    if ( Messages.getGIOPMinor( message ) == 1 )
-                    {
-                        if (logger.isWarnEnabled())
-                        {
-                            logger.warn( "Received a GIOP 1.1 Fragment message"
-                                         + " in " + this.toString());
-                        }
-
-                        //Can't return a message in this case, because
-                        //GIOP 1.1 fragments don't have request
-                        //ids. Therefore, just discard.
-                        buf_mg.returnBuffer( message );
-
-                        return;
-                    }
-
-                    //for now, only GIOP 1.2 from here on
                     int request_id = 0;
                     if ( Messages.getGIOPMinor( message ) == 1 )
                     {
